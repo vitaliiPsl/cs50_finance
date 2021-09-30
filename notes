@@ -1,0 +1,22 @@
+--database table to store transactions
+
+CREATE TABLE transactions(
+    id INTEGER PRIMARY KEY,
+    user_id INTEGER NOT NULL,
+    symbol TEXT NOT NULL,
+    company TEXT NOT NULL,
+    price REAL NOT NULL,
+    shares INTEGER NOT NULL,
+    transaction_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users (id)
+);
+
+-- database to store user's quotes symbols and shares
+CREATE TABLE wallet(
+    user_id INTEGER NOT NULL,
+    symbol TEXT NOT NULL, 
+    shares INTEGER NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users (id)
+);
+
+
