@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/calmy/IT/cs50/cs50/finance/venv"
+VIRTUAL_ENV="/home/calmy/IT/cs50finance/finance/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/calmy/IT/cs50/cs50/finance/venv"
+set -gx VIRTUAL_ENV "/home/calmy/IT/cs50finance/finance/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
