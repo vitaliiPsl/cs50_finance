@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block styles %}
+    <link rel="stylesheet" href="../static/css/buy.css">
+{% endblock %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <h2>Buy</h2>
+    <hr>
+    
+    <form action="/buy" method="POST">
+        <input type="text" name="symbol" autocomplete="off" placeholder="Symbol" id="symbol" autofocus>
+        <input type="number" name="shares" autocomplete="off" placeholder="Shares" id="shares">
+        <button class="btn btn-primary" type="submit" id="buy">Buy</button>
+    </form>
+</div>
+{% endblock %}

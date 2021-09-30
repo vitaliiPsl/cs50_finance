@@ -1,0 +1,27 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+
+}
+
+.container form{
+    height: 100%;;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container form input{
+    margin-bottom: 20px;
+}
+
+.container form select{
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}

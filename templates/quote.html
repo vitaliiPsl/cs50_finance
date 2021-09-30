@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="../static/css/quote.css">
+{% endblock %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <h2>Quotes</h2>
+        <hr>
+        
+        <form action="/quote" method="POST">
+            <input type="text" name="symbol" autocomplete="off" placeholder="Symbol" autofocus>
+            <button class="btn btn-primary" type="submit" id="find">Find</button>
+        </form>
+        <hr>
+    </div>
+
+{% endblock %}

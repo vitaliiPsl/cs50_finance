@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="../static/css/sell.css">
+{% endblock %}
+
+{% block title %}
+Sell
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <h2>Sell</h2>
+    <hr>
+
+    <form action="/sell" method="POST">
+        <select class="form-select form-select-lg" aria-label=".form-select-lg example" name="symbol">
+            <option selected disabled>Symbol</option>
+            {% for symbol in symbols %}
+                <option> {{ symbol }} </option>
+            {% endfor %}
+        </select>
+        <input type="number" name="shares" placeholder="Shares" autocomplete="off">
+        <button class="btn btn-primary" type="submit">Sell</button>
+    </form>
+    <hr>
+</div>
+{% endblock %}

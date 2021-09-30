@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="../static/css/quote.css">
+{% endblock %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <h2> {{ data["name"] }} share ({{ data["symbol"] }}) cost {{ data["price"] }}</h2>
+    </div>
+
+    <script src="../static/js/quote.js"> </script>
+{% endblock %}

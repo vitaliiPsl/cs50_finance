@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="../static/css/history.css">
+{% endblock %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+        <div class="section">
+            <h2>History</h2>
+            <hr>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Company</th>
+                        <th>Price</th>
+                        <th>Shares</th>
+                        <th>Transaction</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    {% for transaction in transactions %}
+                    <tr>
+                        <td>{{ transaction[0] }}</td>
+                        <td>{{ transaction[1] }}</td>
+                        <td>{{ transaction[2] }}</td>
+                        <td>{{ transaction[3] }}</td>
+                        <td>{{ transaction[4] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock %}
